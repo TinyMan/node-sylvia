@@ -1,0 +1,45 @@
+{
+	"name": "sylvia",
+	"version": "1.0.0",
+	"description": "Sylvia is a phone controller for Raspberry Pi allowing to send sms and calls via a GSM hat",
+	"main": "index.js",
+	"scripts": {
+		"test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
+		"cover": "codecov"
+	},
+	"keywords": [
+		"phone",
+		"raspberry pi",
+		"sms",
+		"call"
+	],
+	"author": "TinyMan <raph.a.uzan@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"debug": "^2.6.8",
+		"node-pdu": "^1.0.11",
+		"pdu": "git+https://github.com/TinyMan/pdu.git",
+		"serialport": "^5.0.0-beta8",
+		"speaker": "^0.3.0"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"devDependencies": {
+		"@types/node": "^8.0.15",
+		"codecov": "^2.2.0",
+		"eslint": "^4.3.0",
+		"istanbul": "^0.4.5"
+	},
+	"os": [
+		"linux"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/TinyMan/node-sylvia.git"
+	},
+	"bugs": {
+		"url": "https://github.com/TinyMan/node-sylvia/issues"
+	},
+	"homepage": "https://github.com/TinyMan/node-sylvia#readme"
+}
